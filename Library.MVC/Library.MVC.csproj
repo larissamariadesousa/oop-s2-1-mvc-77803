@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-Library.MVC-755485d1-563e-4279-b177-0e56dcfa7974</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="10.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="10.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="10.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="10.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Library.Domain\Library.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Products\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Products\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Products\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Products\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Products\Index.cshtml" />
+  </ItemGroup>
+
+</Project>
