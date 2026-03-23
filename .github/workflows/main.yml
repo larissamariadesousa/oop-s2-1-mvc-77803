@@ -27,3 +27,6 @@ jobs:
 
     - name: Test
       run: dotnet test --no-build --verbosity normal
+
+      - name: Azure Login
+  uses: Azure/login@v3.0.0
